@@ -1,0 +1,18 @@
+
+@mixin flexy ($fdirection: column) {
+display: flex;
+flex-direction:$fdirection;
+@content;
+}
+
+@mixin media {
+  @media(min-width:1400px ){
+    @content;
+  }
+}
+
+@mixin border-style($background-color: $primary-color, $text-color: white){
+  background-color: $background-color;
+  border-radius: 5px;
+  color: $text-color;
+}

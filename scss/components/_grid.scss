@@ -33,7 +33,7 @@
       // selector would be .grid__col--1
       &--#{$i} {
 
-        // base styles applied to all grid columns 
+        // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
@@ -65,4 +65,11 @@
       margin-left: 10px;
     }
   }
+}
+
+.container{
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  font-size: getrem(18px);
 }

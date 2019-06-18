@@ -1,0 +1,8 @@
+.nav{
+  &__item{
+    @extend %nav__item;     
+    &:hover {
+      @include border-style();
+    }
+  }
+}

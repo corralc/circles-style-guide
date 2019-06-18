@@ -4,7 +4,7 @@
 // **************************************
 
 // NOTE: import utilities and base partials here:
-@import 'base/index.scss';
 @import 'utilities/index.scss';
+@import 'base/index.scss';
 // import components partials
-@import 'components';
+@import 'components/index.scss';
