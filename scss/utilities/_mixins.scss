@@ -6,13 +6,20 @@ flex-direction:$fdirection;
 }
 
 @mixin media {
-  @media(min-width:1400px ){
+  @media(min-width: $large-breakpoint ){
     @content;
   }
 }
-
 @mixin border-style($background-color: $primary-color, $text-color: white){
   background-color: $background-color;
   border-radius: 5px;
   color: $text-color;
+}
+
+@mixin text($font-size: 1.125rem, $font-heaviness:null){
+  font-size: $font-size;
+  color:grey;
+  line-height: 30px;
+  text-align: justify;
+  font-weight:$font-heaviness;
 }

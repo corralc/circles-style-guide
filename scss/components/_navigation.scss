@@ -1,8 +1,12 @@
 .nav{
+  padding-left: 0;
   &__item{
-    @extend %nav__item;     
+    @extend %nav__item;
     &:hover {
       @include border-style();
     }
   }
+}
+.card{
+  @include text();
 }

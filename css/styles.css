@@ -4,7 +4,7 @@ a {
 
 .nav__item {
   list-style: none;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 15px 0;
 }
 
@@ -496,13 +496,30 @@ template {
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  font-size: 1.125px;
 }
 
+.nav {
+  padding-left: 0;
+}
 .nav__item:hover {
   background-color: #22cc96;
   border-radius: 5px;
   color: white;
+}
+
+.card {
+  font-size: 1.125rem;
+  color: grey;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.headline--secondary {
+  font-size: 1.125rem;
+  color: grey;
+  line-height: 30px;
+  text-align: justify;
+  font-weight: lighter;
 }
 
 .grid__row {
@@ -646,7 +663,6 @@ template {
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  font-size: 1.125px;
 }
 
 /*# sourceMappingURL=styles.css.map */
