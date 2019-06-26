@@ -1,0 +1,29 @@
+.img--avatar{
+  margin: 20px 0;
+  align-self: center;
+}
+.form{
+  @include flexy($disp: flex);
+
+  &__label--hidden{
+
+    display:none;
+  }
+
+  &__input{
+    margin-bottom: 20px;
+    border-style: none;
+    border-bottom: 5px $primary-color solid;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    width: 90%;
+    align-self: center;
+  }
+}
+
+[class^="btn"]{
+  padding: 10px;
+  font-size: 1.125rem;
+  border-style:none;
+  border-radius: $btn-radius;
+}

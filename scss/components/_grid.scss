@@ -13,12 +13,11 @@
   // .grid__row
   &__row {
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
+    @include flexy(column, flex);
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
-      flex-direction: row;
+      @include flexy(row);
     }
   }
 
@@ -66,9 +65,12 @@
     }
   }
 }
-
 .container{
-  text-align: center;
   width: 90%;
   margin: 0 auto;
+  font-family: $main-font;
+}
+.grid__col--3,
+.grid__col--9{
+  text-align: center;
 }

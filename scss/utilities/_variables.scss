@@ -1,7 +1,21 @@
 
 //Colors
 $primary-color: #22cc96;
+$primary-text-color: grey;
+$button-text-color: white;
+$default: #3daedb;
+$success: #35e841;
+$error: #d64d3e;
+$warning: #e55b16;
+$info: #ef68f2;
 
 
 //Breakpoint for large screens
 $large-breakpoint: 1400px;
+
+//Font
+$main-font: sans-serif;
+
+//border
+$border: 8px $primary-color solid;
+$btn-radius: 5px;

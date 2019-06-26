@@ -3,7 +3,4 @@
 }
 a{
   @extend %links;
-  &:link, &:visited {
-    color: inherit;
-  }
 }

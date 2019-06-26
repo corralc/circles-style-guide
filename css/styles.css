@@ -1,4 +1,4 @@
-a {
+.link, a {
   text-decoration: none;
 }
 
@@ -10,10 +10,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-a:link, a:visited {
-  color: inherit;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -493,9 +489,43 @@ template {
 }
 
 .container {
-  text-align: center;
   width: 90%;
   margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.grid__col--3,
+.grid__col--9 {
+  text-align: center;
+}
+
+.img--avatar {
+  margin: 20px 0;
+  align-self: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__label--hidden {
+  display: none;
+}
+.form__input {
+  margin-bottom: 20px;
+  border-style: none;
+  border-bottom: 5px #22cc96 solid;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  width: 90%;
+  align-self: center;
+}
+
+[class^=btn] {
+  padding: 10px;
+  font-size: 1.125rem;
+  border-style: none;
+  border-radius: 5px;
 }
 
 .nav {
@@ -506,20 +536,49 @@ template {
   border-radius: 5px;
   color: white;
 }
+.nav__item a:visited, .nav__item a:link {
+  color: inherit;
+}
 
-.card {
+.card p {
   font-size: 1.125rem;
   color: grey;
   line-height: 30px;
-  text-align: justify;
+  text-align: left;
 }
 
 .headline--secondary {
   font-size: 1.125rem;
   color: grey;
   line-height: 30px;
-  text-align: justify;
+  text-align: left;
   font-weight: lighter;
+}
+
+.headline--primary {
+  font-size: 2.3rem;
+  color: #22cc96;
+  line-height: 30px;
+  text-align: left;
+  width: 80%;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.blockquote {
+  font-size: 2rem;
+  color: grey;
+  line-height: 30px;
+  text-align: left;
+  font-style: italic;
+  border-left: 8px #22cc96 solid;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.link {
+  color: #49f6fc;
+  font-weight: bold;
 }
 
 .grid__row {
@@ -660,9 +719,14 @@ template {
 }
 
 .container {
-  text-align: center;
   width: 90%;
   margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.grid__col--3,
+.grid__col--9 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

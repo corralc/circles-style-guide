@@ -2,11 +2,15 @@
   padding-left: 0;
   &__item{
     @extend %nav__item;
+
     &:hover {
       @include border-style();
     }
+    & a:visited, & a:link{
+      color: inherit;
+    }
   }
 }
-.card{
-  @include text();
+.card p {
+  @include text()
 }
