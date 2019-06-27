@@ -1,5 +1,5 @@
 .headline--secondary{
-  @include text(){
+  @include text(1.125rem){
   font-weight: lighter;
   }
 }

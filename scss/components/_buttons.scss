@@ -1,0 +1,33 @@
+
+[class^="btn"]{
+  padding: 10px;
+  font-size: 1.125rem;
+  border-style:none;
+  border-radius: $btn-radius;
+}
+
+.grid__col--12{
+  @include flexy($disp: flex);
+
+  [class^="btn"]{
+    margin-bottom: 25px;
+  }
+
+}
+.btn{
+  &--default {
+    @include button-color($default);
+  }
+  &--success{
+    @include button-color($success);
+  }
+  &--error{
+    @include button-color($error);
+  }
+  &--warning{
+    @include button-color($warning);
+  }
+  &--info{
+    @include button-color($info);
+  }
+}
