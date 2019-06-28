@@ -2,7 +2,9 @@
   padding-left: 0;
   &__item{
     @extend %nav__item;
-
+    @include media {
+    margin-right: 35px;
+  }
     &:hover {
       background-color: $primary-color;
       border-radius: $btn-radius;
@@ -12,7 +14,18 @@
       color: inherit;
     }
   }
+  @include media {
+    @include flexy($fdirection: row, $disp: flex ){
+      justify-content: flex-end;
+    }
+  }
 }
+
+
 .card p {
-  @include text(1.125rem)
+  @include text(1.125rem);
+
+  @include media{
+    margin-bottom: 80px;
+  }
 }

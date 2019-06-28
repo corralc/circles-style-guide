@@ -8,9 +8,17 @@
 
 .grid__col--12{
   @include flexy($disp: flex);
+  @include media {
+    @include flexy($fdirection: row){
+      justify-content: space-around;
+    }
+  }
 
   [class^="btn"]{
     margin-bottom: 25px;
+    @include media{
+      flex-basis: 15%;
+    }
   }
 
 }
