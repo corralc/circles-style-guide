@@ -18,12 +18,13 @@ flex-direction:$fdirection;
   text-align: left;
   @content;
 }
-@mixin btn-style{
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: $btn-radius;
-}
 @mixin button-color ($back-color){
   background-color: $back-color;
   color: $button-text-color;
+}
+@mixin grid-style ($grid-color: null){
+  @extend %btn;
+  background-color: $grid-color;
+  color: grey;
+  font-weight: bold;
 }

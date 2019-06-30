@@ -19,7 +19,7 @@
     align-self: center;
   }
   [class^="btn"]{
-    @include btn-style;
+    @extend %btn;
   }
 
 }

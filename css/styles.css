@@ -8,6 +8,12 @@
   padding: 15px 0;
 }
 
+.form [class^=btn], .grid__col--12 [class^=btn], .grid__col--8.theme__colors, .grid__col--7.theme__colors, .grid__col--5.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--6.theme__colors, .grid__col--12.theme__colors {
+  padding: 10px;
+  font-size: 1.125rem;
+  border-radius: 5px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -518,9 +524,6 @@ button {
 
 .grid__col--12.theme__colors {
   background-color: #22cc96;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -532,12 +535,9 @@ button {
 
 .grid__col--6.theme__colors {
   background-color: #28a5d7;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
-  align-self: auto;
   color: grey;
   font-weight: bold;
+  align-self: auto;
 }
 @media (min-width: 1400px) {
   .grid__col--6.theme__colors {
@@ -547,9 +547,6 @@ button {
 
 .grid__col--4.theme__colors {
   background-color: #7ec9e7;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -561,12 +558,9 @@ button {
 
 .grid__col--3.theme__colors {
   background-color: #f6aef8;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
-  text-align: inherit;
   font-weight: bold;
+  text-align: inherit;
 }
 @media (min-width: 1400px) {
   .grid__col--3.theme__colors {
@@ -576,9 +570,6 @@ button {
 
 .grid__col--5.theme__colors {
   background-color: #7af082;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -590,9 +581,6 @@ button {
 
 .grid__col--7.theme__colors {
   background-color: #e3877d;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -604,9 +592,6 @@ button {
 
 .grid__col--8.theme__colors {
   background-color: #ef8b58;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -631,9 +616,6 @@ div[class=grid__row]:nth-last-child(1) {
   }
 }
 .grid__col--12 [class^=btn] {
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   margin-bottom: 25px;
 }
 @media (min-width: 1400px) {
@@ -684,12 +666,6 @@ div[class=grid__row]:nth-last-child(1) {
   width: 90%;
   align-self: center;
 }
-.form [class^=btn] {
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
-}
-
 .img--frame {
   border: 1px lightgrey solid;
   padding: 15px;
@@ -700,7 +676,7 @@ div[class=grid__row]:nth-last-child(1) {
   }
 }
 
-h4[id=images] + .row .grid__col--6 {
+h4[id=images] + .grid__row .grid__col--6 {
   align-self: center;
 }
 
@@ -941,9 +917,6 @@ h4[id=type] {
 
 .grid__col--12.theme__colors {
   background-color: #22cc96;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -955,12 +928,9 @@ h4[id=type] {
 
 .grid__col--6.theme__colors {
   background-color: #28a5d7;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
-  align-self: auto;
   color: grey;
   font-weight: bold;
+  align-self: auto;
 }
 @media (min-width: 1400px) {
   .grid__col--6.theme__colors {
@@ -970,9 +940,6 @@ h4[id=type] {
 
 .grid__col--4.theme__colors {
   background-color: #7ec9e7;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -984,12 +951,9 @@ h4[id=type] {
 
 .grid__col--3.theme__colors {
   background-color: #f6aef8;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
-  text-align: inherit;
   font-weight: bold;
+  text-align: inherit;
 }
 @media (min-width: 1400px) {
   .grid__col--3.theme__colors {
@@ -999,9 +963,6 @@ h4[id=type] {
 
 .grid__col--5.theme__colors {
   background-color: #7af082;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -1013,9 +974,6 @@ h4[id=type] {
 
 .grid__col--7.theme__colors {
   background-color: #e3877d;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }
@@ -1027,9 +985,6 @@ h4[id=type] {
 
 .grid__col--8.theme__colors {
   background-color: #ef8b58;
-  padding: 10px;
-  font-size: 1.125rem;
-  border-radius: 5px;
   color: grey;
   font-weight: bold;
 }

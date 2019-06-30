@@ -76,68 +76,47 @@
 }
 
 .grid__col--12.theme__colors{
-  background-color: $primary-color;
-  @include btn-style;
-  color: grey;
-  font-weight: bold;
+  @include grid-style ($primary-color);
   @include media{
     text-align: center;
   }
 }
 .grid__col--6.theme__colors{
-  background-color: darken($default, 5%);
-  @include btn-style;
+  @include grid-style (darken($default, 5%));
   align-self: auto;
-  color: grey;
-  font-weight: bold;
   @include media{
     text-align: center;
   }
 }
 .grid__col--4.theme__colors{
-  background-color: lighten($default, 15%);
-  @include btn-style;
-  color: grey;
-  font-weight: bold;
+  @include grid-style (lighten($default, 15%));
   @include media{
     text-align: center;
   }
 }
 .grid__col--3.theme__colors{
-  background-color: lighten($info, 15%);
-  @include btn-style;
-  color: grey;
+  @include grid-style (lighten($info, 15%));
   text-align: inherit;
-  font-weight: bold;
   @include media{
     text-align: center;
   }
 }
 .grid__col--5.theme__colors{
-  background-color: lighten($success, 15%);
-  @include btn-style;
-  color: grey;
-  font-weight:bold;
+  @include grid-style (lighten($success, 15%));
   @include media{
     text-align: center;
   }
 }
 
 .grid__col--7.theme__colors{
-  background-color: lighten($error, 15%);
-  @include btn-style;
-  color:grey;
-  font-weight: bold;
+  @include grid-style(lighten($error, 15%));
   @include media{
     text-align: center;
   }
 }
 
 .grid__col--8.theme__colors{
-  background-color: lighten($warning, 15%);
-  @include btn-style;
-  color: grey;
-  font-weight: bold;
+  @include grid-style(lighten($warning, 15%));
   @include media{
     text-align: center;
   }
