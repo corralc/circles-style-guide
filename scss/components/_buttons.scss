@@ -1,11 +1,3 @@
-
-[class^="btn"]{
-  padding: 10px;
-  font-size: 1.125rem;
-  border-style:none;
-  border-radius: $btn-radius;
-}
-
 .grid__col--12{
   @include flexy($disp: flex);
   @include media {
@@ -15,6 +7,7 @@
   }
 
   [class^="btn"]{
+    @include btn-style;
     margin-bottom: 25px;
     @include media{
       flex-basis: 15%;

@@ -6,7 +6,6 @@
   @include flexy($disp: flex);
 
   &__label--hidden{
-
     display:none;
   }
 
@@ -19,4 +18,8 @@
     width: 90%;
     align-self: center;
   }
+  [class^="btn"]{
+    @include btn-style;
+  }
+
 }

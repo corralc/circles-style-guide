@@ -6,8 +6,11 @@
     margin-left: 50px;
   }
 }
-.grid__col--6{
-  align-self: center;
+h4[id="images"] + .row{
+
+  .grid__col--6{
+    align-self: center;
+                }
 }
 
 .grid__col--6 + .grid__col--6{

@@ -1,4 +1,4 @@
-.link, a {
+.link {
   text-decoration: none;
 }
 
@@ -351,6 +351,23 @@ template {
   display: none;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+input,
+button {
+  border-style: none;
+}
+
+button {
+  background-color: white;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -503,7 +520,6 @@ template {
   background-color: #22cc96;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -518,7 +534,6 @@ template {
   background-color: #28a5d7;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   align-self: auto;
   color: grey;
@@ -534,7 +549,6 @@ template {
   background-color: #7ec9e7;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -549,7 +563,6 @@ template {
   background-color: #f6aef8;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   text-align: inherit;
@@ -565,7 +578,6 @@ template {
   background-color: #7af082;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -580,7 +592,6 @@ template {
   background-color: #e3877d;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -595,7 +606,6 @@ template {
   background-color: #ef8b58;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -610,13 +620,6 @@ div[class=grid__row]:nth-last-child(1) {
   justify-content: center;
 }
 
-[class^=btn] {
-  padding: 10px;
-  font-size: 1.125rem;
-  border-style: none;
-  border-radius: 5px;
-}
-
 .grid__col--12 {
   display: flex;
   flex-direction: column;
@@ -628,6 +631,9 @@ div[class=grid__row]:nth-last-child(1) {
   }
 }
 .grid__col--12 [class^=btn] {
+  padding: 10px;
+  font-size: 1.125rem;
+  border-radius: 5px;
   margin-bottom: 25px;
 }
 @media (min-width: 1400px) {
@@ -678,6 +684,11 @@ div[class=grid__row]:nth-last-child(1) {
   width: 90%;
   align-self: center;
 }
+.form [class^=btn] {
+  padding: 10px;
+  font-size: 1.125rem;
+  border-radius: 5px;
+}
 
 .img--frame {
   border: 1px lightgrey solid;
@@ -689,7 +700,7 @@ div[class=grid__row]:nth-last-child(1) {
   }
 }
 
-.grid__col--6 {
+h4[id=images] + .row .grid__col--6 {
   align-self: center;
 }
 
@@ -718,6 +729,9 @@ div[class=grid__row]:nth-last-child(1) {
 }
 .nav__item a:visited, .nav__item a:link {
   color: inherit;
+}
+.nav__item a {
+  text-decoration: none;
 }
 @media (min-width: 1400px) {
   .nav {
@@ -929,7 +943,6 @@ h4[id=type] {
   background-color: #22cc96;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -944,7 +957,6 @@ h4[id=type] {
   background-color: #28a5d7;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   align-self: auto;
   color: grey;
@@ -960,7 +972,6 @@ h4[id=type] {
   background-color: #7ec9e7;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -975,7 +986,6 @@ h4[id=type] {
   background-color: #f6aef8;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   text-align: inherit;
@@ -991,7 +1001,6 @@ h4[id=type] {
   background-color: #7af082;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -1006,7 +1015,6 @@ h4[id=type] {
   background-color: #e3877d;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;
@@ -1021,7 +1029,6 @@ h4[id=type] {
   background-color: #ef8b58;
   padding: 10px;
   font-size: 1.125rem;
-  border-style: none;
   border-radius: 5px;
   color: grey;
   font-weight: bold;

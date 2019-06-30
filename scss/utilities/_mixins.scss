@@ -21,7 +21,6 @@ flex-direction:$fdirection;
 @mixin btn-style{
   padding: 10px;
   font-size: 1.125rem;
-  border-style:none;
   border-radius: $btn-radius;
 }
 @mixin button-color ($back-color){

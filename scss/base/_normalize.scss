@@ -347,3 +347,19 @@ template {
 [hidden] {
   display: none;
 }
+
+li{
+  list-style: none;
+}
+
+ul{
+  padding: 0;
+}
+
+input,
+button{
+  border-style: none;
+}
+button {
+  background-color: white;
+}
