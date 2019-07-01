@@ -16,7 +16,7 @@
     @include flexy(column, flex);
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include media {
       @include flexy(row);
     }
   }
@@ -39,7 +39,7 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include media {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -58,7 +58,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include media {
 
       // add grid gutter
       margin-left: 10px;
