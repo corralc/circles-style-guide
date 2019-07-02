@@ -1,34 +1,40 @@
-.grid__col--12{
-  @include flexy($disp: flex);
-  @include media {
-    @include flexy($fdirection: row){
-      justify-content: space-around;
+[class = "grid__row"]:nth-of-type(5) {
+  .grid__col--12 {
+    @include flexy($disp: flex);
+    @include media {
+      @include flexy($fdirection: row) {
+        justify-content: space-around;
+      }
+    }
+
+    [class^="btn"] {
+      @extend %btn;
+      margin-bottom: 25px;
+      @include media {
+        flex-basis: 15%;
+      }
     }
   }
-
-  [class^="btn"]{
-    @extend %btn;
-    margin-bottom: 25px;
-    @include media{
-      flex-basis: 15%;
-    }
-  }
-
 }
-.btn{
+
+.btn {
   &--default {
     @include button-color($default);
   }
-  &--success{
+
+  &--success {
     @include button-color($success);
   }
-  &--error{
+
+  &--error {
     @include button-color($error);
   }
-  &--warning{
+
+  &--warning {
     @include button-color($warning);
   }
-  &--info{
+
+  &--info {
     @include button-color($info);
   }
 }

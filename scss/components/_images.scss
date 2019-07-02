@@ -1,22 +1,21 @@
-
-.img--frame{
+.img--frame {
   border: 1px lightgrey solid;
   padding: 15px;
-    @include media{
+  @include media {
     margin-left: 50px;
   }
 }
-h4[id="images"] + .grid__row{
 
-  .grid__col--6{
+h4[id="images"] + .grid__row {
+  .grid__col--6 {
     align-self: center;
-                }
+  }
 }
 
-.grid__col--6 + .grid__col--6{
-  @include media{
-    @include flexy($fdirection: row, $disp: flex){
+.grid__col--6 + .grid__col--6 {
+  @include media {
+    @include flexy($fdirection: row, $disp: flex) {
       justify-content: center;
     }
-}
+  }
 }

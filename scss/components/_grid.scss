@@ -5,124 +5,119 @@
 // major grid styles have been added here for you
 // but additional styling may be needed
 // **********************************************
-
-
 // grid base class
-.grid {
 
+.grid {
   // .grid__row
   &__row {
     padding: 1em 10px;
     @include flexy(column, flex);
-
     // NOTE: replace with media query mixin if aiming for exceeds
     @include media {
       @include flexy(row);
     }
   }
-
   // .grid__col
   &__col {
-
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {
-
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
       &--#{$i} {
-
         // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
-
         // NOTE: replace with media query mixin if aiming for exceeds
         @include media {
-
           // base stlyes applied to all grid columns
           margin-top: 0;
-
           // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100 + "%"} ;
+          flex-basis: #{$i / 12 * 100 + "%"};
         }
       }
     }
   }
 }
-
 // targets all elements with classes that begin with grid__col
+
 [class^=grid__col] {
   // grid__col + grid__col, targets two sibling columns
   & + & {
-
     // NOTE: replace with media query mixin if aiming for exceeds
     @include media {
-
       // add grid gutter
       margin-left: 10px;
     }
   }
 }
-.container{
+
+.container {
   width: 90%;
   margin: 0 auto;
   font-family: $main-font;
 }
+
 .grid__col--3,
-.grid__col--9{
+.grid__col--9 {
   text-align: center;
 }
 
-.grid__col--12.theme__colors{
+.grid__col--12.theme__colors {
   @include grid-style ($primary-color);
-  @include media{
+  @include media {
     text-align: center;
   }
 }
-.grid__col--6.theme__colors{
+
+.grid__col--6.theme__colors {
   @include grid-style (darken($default, 5%));
   align-self: auto;
-  @include media{
+  @include media {
     text-align: center;
   }
 }
-.grid__col--4.theme__colors{
+
+.grid__col--4.theme__colors {
   @include grid-style (lighten($default, 15%));
-  @include media{
+  @include media {
     text-align: center;
   }
 }
-.grid__col--3.theme__colors{
+
+.grid__col--3.theme__colors {
   @include grid-style (lighten($info, 15%));
   text-align: inherit;
-  @include media{
+  @include media {
     text-align: center;
   }
 }
-.grid__col--5.theme__colors{
+
+.grid__col--5.theme__colors {
   @include grid-style (lighten($success, 15%));
-  @include media{
+  @include media {
     text-align: center;
   }
 }
 
-.grid__col--7.theme__colors{
+.grid__col--7.theme__colors {
   @include grid-style(lighten($error, 15%));
-  @include media{
+  @include media {
     text-align: center;
   }
 }
 
-.grid__col--8.theme__colors{
+.grid__col--8.theme__colors {
   @include grid-style(lighten($warning, 15%));
-  @include media{
+  @include media {
     text-align: center;
   }
 }
-div[class = "grid__row"]:nth-last-child(1){
-@include media{
-  justify-content: center;
-}
+
+div[class = "grid__row"]:nth-last-child(1) {
+  @include media {
+    justify-content: center;
+  }
 }

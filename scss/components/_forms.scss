@@ -1,15 +1,16 @@
-.img--avatar{
+.img--avatar {
   margin: 20px 0;
   align-self: center;
 }
-.form{
+
+.form {
   @include flexy($disp: flex);
 
-  &__label--hidden{
-    display:none;
+  &__label--hidden {
+    display: none;
   }
 
-  &__input{
+  &__input {
     margin-bottom: 20px;
     border-style: none;
     border-bottom: 5px $primary-color solid;
@@ -18,8 +19,8 @@
     width: 90%;
     align-self: center;
   }
-  [class^="btn"]{
+
+  [class^="btn"] {
     @extend %btn;
   }
-
 }
